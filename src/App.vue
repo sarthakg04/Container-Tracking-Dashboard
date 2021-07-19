@@ -26,6 +26,7 @@
         <v-list-item
           v-for="item in items"
           :key="item.title"
+          :to="item.to"
           link
         >
           <v-list-item-icon>
@@ -56,9 +57,9 @@
     data: () => ({ 
       drawer: null,
       items: [
-          { title: 'Home', icon: 'mdi-home-city' },
-          { title: 'My Account', icon: 'mdi-account' },
-          { title: 'Users', icon: 'mdi-account-group-outline' },
+          { title: 'Home', icon: 'mdi-home-city', to:'/' },
+          { title: 'My Account', icon: 'mdi-account', to:'/about' },
+          { title: 'Users', icon: 'mdi-account-group-outline', to:'/' },
         ],
         mini: true,
        }),
