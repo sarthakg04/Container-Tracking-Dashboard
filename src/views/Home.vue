@@ -1,5 +1,7 @@
 <template>
-  <hello-world />
+  <p>
+  This is a Dashboard
+  </p>
 </template>
 
 <script>
