@@ -29,7 +29,7 @@
         </v-card-text>
       </v-card>
 <v-card width="220px" class="float-right" id='legend'>
-Legend:
+<center>Legend:</center>
 <table>
 <tr>  
 <td>
@@ -173,6 +173,8 @@ map.addImage('custom-marker', image);
 [-69.25781250000001,34.52466147177175],
 [-69.16992187500001,33.211116472416855],
 [-69.26992187500001,33.261116472416855],
+[-70.2992187500001,31.261116472416855],
+[-76.2992187500001,29.261116472416855],
 [-78.6429, 26.5333],
 ]
 }
@@ -188,7 +190,7 @@ map.addLayer({
 },
 'paint': {
 'line-color': '#888',
-'line-width': 8
+'line-width': 2
 }
 });
       map.addLayer({

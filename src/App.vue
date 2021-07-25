@@ -1,6 +1,7 @@
 <template>
   <v-app id="inspire">
     <v-navigation-drawer
+    class="grey darken-4"
       v-model="drawer"
       :mini-variant.sync="mini"
       app
@@ -9,7 +10,7 @@
         <v-list-item-avatar>
           <v-img src="https://randomuser.me/api/portraits/men/85.jpg"></v-img>
         </v-list-item-avatar>
-        <v-list-item-title>Sarthak Gupta</v-list-item-title>
+        <v-list-item-title style='color:white;' >Sarthak Gupta</v-list-item-title>
         <v-btn
           icon
           @click.stop="mini = !mini"
@@ -28,11 +29,11 @@
           link
         >
           <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
+            <v-icon color="white">{{ item.icon }}</v-icon>
           </v-list-item-icon>
 
           <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <v-list-item-title style='color:white;'>{{ item.title}}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list> 
@@ -52,13 +53,14 @@
 </style>
 <script>
   export default {
+    
     data: () => ({ 
       drawer: null,
 
       items: [
           { title: 'Home', icon: 'mdi-home-city', to:'/' },
-          { title: 'My Account', icon: 'mdi-account', to:'/vessels' },
-          { title: 'Users', icon: 'mdi-account-group-outline', to:'' },
+          { title: 'My Account', icon: 'mdi-airballoon-outline', to:'/vessels' },
+          { title: 'Users', icon: 'mdi-satellite-variant', to:'' },
         ],
         mini: true,
        }),
